@@ -1,3 +1,3 @@
-# js-b5tdt3
+# Cookie Clicker Save Corruptor
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-b5tdt3)
+A script that randomely randomizes Cookie Clicker saves.
