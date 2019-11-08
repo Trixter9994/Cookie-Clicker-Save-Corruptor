@@ -4,17 +4,13 @@ document.getElementById("app").appendChild(x);
 var y = document.createElement("INPUT");
 y.setAttribute("type", "text");
 document.getElementById("CorruptLevel").appendChild(y);
-var z = document.getElementById("beta");
-
 var button = document.getElementById("button");
 button.addEventListener('click', corrupt);
 
 function corrupt() {
   var CL=parseInt(y.value);
-  var beta=z.checked;
-  if (beta==false) beta=15; else beta=13;
-  var endstr=x.value.slice((x.value.length-beta),x.value.length);
-  var saveID=x.value.slice(0,(x.value.length-beta));
+  var endstr=x.value.slice(x.value.indexOf("%"),x.value.length);
+  var saveID=x.value.slice(0,x.value.indexOf("%"));
   saveID=atob(saveID);
   //console.log(saveID)
   //decompile string
