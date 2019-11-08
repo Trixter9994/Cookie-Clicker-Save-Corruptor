@@ -39,7 +39,7 @@ function corrupt() {
     for(var j=0;j<saveID[i].length;j++){
       saveID[i][j]=saveID[i][j].join(",");
     }
-    saveID[i]=saveID[i].join(";");
+    saveID[i]=saveID[i].join(";"); 
   }
   saveID=saveID.join("|");
   //convert to base64
