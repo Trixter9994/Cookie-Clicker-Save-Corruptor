@@ -23,7 +23,7 @@ function corrupt() {
   }
   //do stuff...
   for(var i=0;i<CL;i++){
-    var l1=(Math.floor(Math.random()*(saveID.length-4))+4)-1;
+    var l1=(Math.floor(Math.random()*(saveID.length-4))+4);
     var l2=Math.floor(Math.random()*saveID[l1].length);
     var l3=Math.floor(Math.random()*saveID[l1][l2].length);
     var l4=Math.floor(Math.random()*saveID[l1][l2][l3].length);
