@@ -27,7 +27,7 @@ function corrupt() {
     var l2=Math.floor(Math.random()*saveID[l1].length);
     var l3=Math.floor(Math.random()*saveID[l1][l2].length);
     var l4=Math.floor(Math.random()*saveID[l1][l2][l3].length);
-    var lr=Math.floor(Math.random()*10);
+    (l4==0)?lr=Math.floor(Math.random()*9)+1:lr=Math.floor(Math.random()*10);//choose non-zero number for beginning
     //console.log(l1,l2,l3,l4);
     if (saveID[l1][l2][l3][l4]!=undefined&&isNaN(saveID[l1][l2][l3][l4])==false) {
       saveID[l1][l2][l3]=saveID[l1][l2][l3].slice(0,l4)+lr.toString()+saveID[l1][l2][l3].slice(l4+1,saveID[l1][l2][l3].length+1);
